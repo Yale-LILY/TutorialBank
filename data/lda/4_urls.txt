@@ -1,0 +1,20 @@
+http://l2r.cs.uiuc.edu/~danr/Teaching/CS546-09/Lectures/domain-adapt.pdf
+https://github.com/amueller/scipy-2016-sklearn/blob/master/slides/scipy2016.pdf
+https://github.com/rasbt/pydata-chicago2016-ml-tutorial/blob/master/slides/PyDataChi2016_sr.pdf
+http://lxmls.it.pt/2013/lecture_sebastian.pdf
+http://pages.cs.wisc.edu/~jerryzhu/pub/acl08tutorial.pdf
+http://john.blitzer.com/tutorial/ssl_tutorial.pptx
+http://www.coling-2014.org/COLING%202014%20Tutorial_bias_COMPLETE%20-%20Anders%20Sogaard.pdf
+http://adaptationtutorial.blitzer.com/
+http://www.morganclaypool.com/doi/pdf/10.2200/S00497ED1V01Y201304HLT021
+http://www.morganclaypool.com/doi/pdf/10.2200/S00497ED1V01Y201304HLT021
+https://pdfs.semanticscholar.org/532e/3d5b1b5807771b77cac60fe8594b506fcff9.pdf
+https://epat2014.sciencesconf.org/conference/epat2014/pages/slides_DA_epat_17.pdf
+https://www.cs.sfu.ca/~anoop/papers/pdf/semisup_naacl.pdf
+URL Unknown
+http://www.coli.uni-saarland.de/courses/cacl10/slides/Humor_Kaeshammer.pdf
+http://www.jmlr.org/papers/volume14/wang13a/wang13a.pdf
+http://lxmls.it.pt/2013/stefan_slides.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/543.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/512.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/511.pdf

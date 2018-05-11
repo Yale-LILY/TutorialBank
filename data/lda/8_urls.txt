@@ -1,0 +1,20 @@
+http://homepages.inf.ed.ac.uk/kbyrne3/docs/masws10.pdf
+https://github.com/soumith/talks/blob/master/2017-AIFrontiers_SanJose/AIFrontiers_torch-overview.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/271.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/381.pdf
+http://www.emnlp2015.org/tutorials/3/3_OptionalAttachment.pdf
+http://www.mpi-inf.mpg.de/~weikum/weikum-keynote-cikm2014.pptx
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/512.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/511.pdf
+https://pro.unibz.it/projects/schoolrecsys17/cbrs.pdf
+https://people.mpi-inf.mpg.de/~weikum/weikum-CCKS-Beijing-sep2016-presented.pdf
+https://people.mpi-inf.mpg.de/~weikum/weikum-adc2015-forwebsite.pdf
+http://www.nacloweb.org/resources/problems/2015/N2015-G.pdf
+http://www.nacloweb.org/resources/problems/2015/N2015-G.pdf
+http://aclweb.org/anthology/D15-1256
+http://www.jordipons.me/media/DL4Music_Pons.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2016/542.pdf
+URL Unknown
+https://www.cs.cmu.edu/~ark/EMNLP-2015/tutorials/6/6_OptionalAttachment.pdf
+https://aclweb.org/anthology/D16-1122
+https://gate.ac.uk/sale/talks/lrec2012-tutorial/opinion-mining.pdf

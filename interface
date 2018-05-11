@@ -1,0 +1,208 @@
+#!/usr/bin/python
+
+import sys
+import csv
+
+topics = {}
+topic_ids = []
+
+def print_help():
+    print("Welcome to the interface help menu. Here are the different options:")
+    print("  -t      : display all topic names and corresponding ids")
+    print("  -t [id] : display topic name of given id")
+    print("  -p [id] : display topic names that are prerequisites of given topic id")
+    print("  -r [id] : display useful resources for given topic id")
+    print("  -c [id] : display card paths for cards relevant for a given topic id")
+    print("  -it     : display topics for images. Note that these are different from -t and correspond to the taxonomy")
+    print("  -i [id] : display urls of images related to given topic id (from -it)")
+    
+
+
+def load_topics():
+    global topics, topic_ids
+    with open('data/prerequisite_topics.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            tid = int(row[0])
+            topic_ids.append(tid)            
+            topics[tid] = row
+
+def print_topic(id):
+    global topics
+    row = topics[id]
+    print("%s %s"%(row[0],row[1]))
+            
+def list_topics(topic_id = -1):
+    global topics
+    if topic_id == -1:
+        for t in topic_ids:
+            print_topic(t)
+    elif topic_id in topic_ids:
+        print_topic(topic_id)
+    else:
+        print("Invalid topic id. To view all topics, run %./interface -t")
+        
+def list_prereqs(target_id):
+    global topic_ids
+    if target_id not in topic_ids:
+        print("invalid id")
+        return
+    with open('data/prerequisite_annotations.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            row = [int(i) for i in row]
+            if row[1] == target_id and row[2] == 1:
+                print_topic(row[0])
+
+def list_resources(target_id):
+    global topic_ids
+    if target_id not in topic_ids:
+        print("invalid id")
+        return
+    with open('data/topics_to_resources.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            if int(row[0]) == target_id:
+                print("%s %s"%(row[2],row[3]))
+
+def list_cards(target_id):
+    global topic_ids
+    if target_id not in topic_ids:
+        print("invalid id")
+        return
+    with open('data/survey_annotations.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            if int(row[3]) == target_id and int(row[2]) == 2:
+                variables = (int(row[0]),int(row[1]),int(row[0]),int(row[1]))
+                print("Resource: %4d, Card: %3d, Path: data/cards/%s-%s.pdf"%variables)
+                
+taxonomy = {}
+taxonomy_map = {}
+taxonomy_ids = []
+
+def load_taxonomy():
+    global taxonomy, taxonomy_map, taxonomy_ids
+    with open('data/taxonomy.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            tid = int(row[0])
+            taxonomy_ids.append(int(row[3]))            
+            taxonomy[tid] = {
+                'id': tid,
+                'topic': row[1],
+                'trueid':int(row[3]),
+                'resources': []                
+            }
+            taxonomy_map[int(row[3])] = tid
+            
+def load_resources():                
+    global taxonomy,taxonomy_map, taxonomy_ids
+    load_taxonomy()
+    with open('data/resources.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            if int(row[3]) in taxonomy_ids:
+                taxonomy[taxonomy_map[int(row[3])]]['resources'].append(int(row[0]))
+                
+def list_image_topics(topic_id = -1):
+    with open('data/taxonomy.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            if topic_id == -1 or int(row[0]) == topic_id:
+                print("%s %s"%(row[0],row[1]))
+    
+def list_images(topic_id):
+    global taxonomy
+    if topic_id not in taxonomy:
+        print("invalid id")
+        return
+    resources = taxonomy[topic_id]['resources']
+    #print(resources)
+    with open('data/image_urls.csv') as f:
+        reader = csv.reader(f)
+        next(reader, None) 
+        for row in reader:
+            resource_id = int(row[0])
+            if resource_id in resources:
+                print("%s %s"%(row[0],row[1]))
+                
+def main():
+    # no arg given or help
+    if len(sys.argv) < 2 or sys.argv[1] == "-h":
+        print_help()
+        return 0
+
+    load_topics()
+
+    # check that 2nd argument is always integer
+    if len(sys.argv) > 2:
+        if not sys.argv[2].isdigit():
+            print("Invalid argument. For help, run %./interface -h")
+            return 1
+
+    # list topics
+    if sys.argv[1] == "-t":
+        if len(sys.argv) > 2:
+            topic_id = int(sys.argv[2])
+            list_topics(topic_id)
+        else:
+            list_topics()
+        return 0
+
+    # list prerequisites
+    if sys.argv[1] == "-p":
+        if len(sys.argv) > 2:
+            list_prereqs(int(sys.argv[2]))
+        else:
+            print("please specify topic id")
+        return 0
+        
+    # list useful resources
+    if sys.argv[1] == "-r":
+        if len(sys.argv) > 2:
+            list_resources(int(sys.argv[2]))
+        else:
+            print("please specify topic id")
+        return 0
+
+    # list cards from resources
+    if sys.argv[1] == "-c":
+        if len(sys.argv) > 2:
+            list_cards(int(sys.argv[2]))
+        else:
+            print("please specify topic id")
+        return 0
+
+    # list image topics
+    if sys.argv[1] == "-it":
+        if len(sys.argv) > 2:
+            topic_id = int(sys.argv[2])
+            list_image_topics(topic_id)
+        else:
+            list_image_topics()
+        return 0
+
+    # list images given topic
+    if sys.argv[1] == "-i":
+        if len(sys.argv) > 2:
+            load_resources()
+            list_images(int(sys.argv[2]))
+        else:
+            print("please specify topic id")
+        return 0
+        
+    
+    # not a flag. display help
+    print_help()
+    return 0
+            
+if __name__ == "__main__":
+    main()

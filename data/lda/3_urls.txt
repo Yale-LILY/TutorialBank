@@ -1,0 +1,20 @@
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/443.pdf
+https://royalsociety.org/topics-policy/projects/machine-learning/
+http://ir.ischool.utexas.edu/crowd/mlease-ut-ling-022811.pdf
+http://www.morganclaypool.com/doi/pdf/10.2200/S00204ED1V01Y200910HLT005
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/williams2009tutorial.pdf
+http://esslli2016.unibz.it/wp-content/uploads/2015/10/ResponsiveAgents_ESSLLI16_Day1.pdf
+https://web.stanford.edu/class/cs224u/materials/cs224u-2016-li-chatbots.pdf
+http://cs.jhu.edu/~jason/papers/eisner.sol16.pptx
+http://esslli2016.unibz.it/wp-content/uploads/2015/10/1-Crowdsourcing_Aug2016_ESSLLII.pptx.pdf
+http://esslli2016.unibz.it/wp-content/uploads/2016/08/5-Crowdsourcing_Aug2016_ESSLLII.pptx.pdf
+http://esslli2016.unibz.it/wp-content/uploads/2016/08/2-Crowdsourcing_Aug2016_ESSLLII.pptx.pdf
+http://eliassi.org/safra17.pdf
+http://www.deeplearningindaba.com/uploads/1/0/2/6/102657286/indaba_programme.pdf
+http://esslli2016.unibz.it/wp-content/uploads/2015/10/ResponsiveAgents_ESSLLI16_Day3.pdf
+URL Unknown
+https://pdfs.semanticscholar.org/0a92/f3192f064df6c99705ba57dbf797cf9d8870.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/444.pdf
+https://github.com/frozstone/survey/blob/master/DeepDialogue_Tutorial.pdf
+https://drive.google.com/file/d/0B8lLzpxgRHNQZ0paZWQ0cTcxMlNYYnc0TnpHekMxMjVBckVR/view
+http://www.jfiowa.com/talks/nlu.pdf

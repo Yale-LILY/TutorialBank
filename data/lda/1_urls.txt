@@ -1,0 +1,20 @@
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.170.7951&rep=rep1&type=pdf
+https://www.upf.edu/documents/7967570/7969398/text_simplification_tutorial_RANLP2015_updated.pdf/ba05acb1-99a7-7264-2119-c8977e8664f6
+https://www.seas.upenn.edu/~pdtb/papers/joshi-etal06-discourse-annotation-tutorial.ppt
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/441.pdf
+http://www.emnlp2015.org/tutorials/10/10_OptionalAttachment.pdf
+http://faculty.washington.edu/fxia/lsa2011/slides/bert_slides.pdf
+http://www.morganclaypool.com/doi/abs/10.2200/S00354ED1V01Y201111HLT015
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/433.pdf
+www.morganclaypool.com/doi/abs/10.2200/S00700ED1V01Y201602HLT032
+http://naacl2013.naacl.org/Documents/discourse-processing-naacl-2013-tutorial.pdf
+URL Unknown
+http://samples.sainsburysebooks.co.uk/9781608459803_sample_259063.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/442.pdf
+https://aclweb.org/anthology/D16-1034
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2016/426.pdf
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2017/281.pdf
+http://anthology.aclweb.org/P16-2024
+http://www.cs.yale.edu/homes/radev/nlpclass/slides2016/422.pdf
+http://anthology.aclweb.org/P16-2026

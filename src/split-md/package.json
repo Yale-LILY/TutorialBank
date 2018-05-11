@@ -1,0 +1,53 @@
+{
+  "name": "split-md",
+  "description": "split up Markdown file into smallers files",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "istanbul cover -x *.test.js,src/index.js _mocha tests/*.test.js",
+    "commit": "git-cz",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "markdown",
+    "text",
+    "md",
+    "split",
+    "delimiter"
+  ],
+  "devDependencies": {
+    "chai": "4.0.1",
+    "codecov.io": "0.1.6",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "ghooks": "2.0.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.4.2",
+    "semantic-release": "^6.3.2",
+    "shelljs": "0.7.5"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
+  },
+  "author": "Andy Craze <accraze@gmail.com> (http://accraze.info/)",
+  "license": "MIT",
+  "dependencies": {
+    "cli": "1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accraze/split-md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/accraze/split-md/issues"
+  },
+  "homepage": "https://github.com/accraze/split-md",
+  "bin": {
+    "split-md": "src/index.js"
+  }
+}
