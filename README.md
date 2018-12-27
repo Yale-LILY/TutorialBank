@@ -45,6 +45,7 @@ A corpus designed to facilitate NLP education and promote research in the areas 
 
 
 ## Download all the resources from the corpus:
+# Install lynx (follow [these instructions](https://www.tecmint.com/command-line-web-browsers/) or [these](https://habilis.net/lynxlet/) for OSX).
 python src/download_all.py
 
 
