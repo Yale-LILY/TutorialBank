@@ -1,6 +1,6 @@
 # TutorialBank: A Manually-Collected Corpus for Prerequisite Chains, Survey Extraction and Resource Recommendation
 
-A corpus designed to facilitate NLP education and promote research in the areas of generating surveys for scientific topics, prerequisite chains of learning, resource recommendations, among others. Also check out our [search engine](http://tangra.cs.yale.edu/newaan/)!
+A corpus designed to facilitate NLP education and promote research in the areas of generating surveys for scientific topics, prerequisite chains of learning, resource recommendations, among others. Also check out our [search engine](http://aan.how/)!
 
 
 # Folder Structure:
@@ -62,8 +62,11 @@ python src/get_cards.py
 4184 urls                                                  
 5664 all 
 
-There are now over 6,300 resources in our corpus and [search engine](http://tangra.cs.yale.edu/newaan/). 
-
 pedagogical annotations kappa: 0.69                                                                                           
 prerequisite annotations kappa: 0.30                                                                                           
 survey annotations kappa: 0.33
+
+# Update (2021-06-14)
+
+
+As of June 14, 2021 we have 20,000+ resources in our corpus and [search engine](http://aan.how/). 
