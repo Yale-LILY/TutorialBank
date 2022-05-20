@@ -1,5 +1,6 @@
-# TutorialBank: A Manually-Collected Corpus for Prerequisite Chains, Survey Extraction and Resource Recommendation
+# LILY TutorialBank
 
+This is the repo for the TutorialBank Corpus. 
 
 ## Resource Update - May, 2022
 
@@ -12,3 +13,7 @@ We also release an extra batch of 5001 resources [resources-v2022-extra.tsv](htt
 ## Code and Data for our Paper
 
 If you want to replicate our 2018 ACL paper [TutorialBank: A Manually-Collected Corpus for Prerequisite Chains, Survey Extraction and Resource Recommendation](https://aclanthology.org/P18-1057), please visit the [`TB-Paper`](https://github.com/Yale-LILY/TutorialBank/tree/master/TB-Paper) folder for the coresponding source code and data.
+
+## Other resources
+
+Please visit our website [AAN.how](https://aan.how/).
